@@ -1,3 +1,5 @@
+# this istest file
+
 require "./hero"
 
 describe Hero do
@@ -18,5 +20,11 @@ describe Hero do
     hero = Hero.new 'mike'
 
     expect(hero.power_down).to eq 90
+  end
+
+  it "displays full hero info" do
+    hero = Hero.new 'mike'
+
+    expect(hero.hero_info).to eq 'Mike has a health 100'
   end
 end
