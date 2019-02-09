@@ -5,7 +5,7 @@ require "./hero"
 describe Hero do
   
   before do
-    @hero = Hero.new 'Mike'
+    @hero = Hero.new 'mike'
   end
 
   it "has a capitalized name" do
